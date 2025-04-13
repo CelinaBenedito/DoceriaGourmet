@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Doceria Gourmet</title>
+</head>
+
+<body>
+    <div class="container_total">
+        <div class="container1">
+            <div class="formulario">
+                <h1>Doceria Gourmet🍭</h1>
+
+                <p>Qual o tipo do doce?</p>
+                <select id="ipt_tipo">
+                    <option value="1">Macarons🍩</option>
+                    <option value="2">Brigadeiros Gourmet🍫</option>
+                    <option value="3">Cupcakes🧁</option>
+                    <option value="4">Cheescakes🍰</option>
+                </select>
+
+                <p>Quantos serão vendidos?</p>
+                <input type="number" id="ipt_qtd">
+
+                <p>Qual será o valor da unidade?</p>
+                <input type="number" id="ipt_valor">
+                <div class="botoes">
+                    <div class="botoes_exclusivos">
+                        <button onclick="registrar()">Registrar valor</button>
+                        <button onclick="verificar()">Verificar Vendas</button>
+                    </div>
+
+                    <button onclick="limpar()">Limpar tabela</button>
+                </div>
+            </div>
+
+            <div class="container" id="container">
+                <h1 id="titulo_tabela"></h1>
+                <div id="div_tabela">
+                    <div class="campo">
+                        <p id="div_numeroVenda"></p>
+                    </div>
+                    <div class="campo" id="div_imagem"></div>
+                    <div class="campo">
+                        <p id="div_valor"></p>
+                    </div>
+                </div>
+                <div id="div_resposta"></div>
+            </div>
+        </div>
+
+        <div class="container2">
+            <p>Quantas reviews você quer gerar?</p>
+            <div class="formulario">
+                <input type="number" id="ipt_random">
+                <div class="botoes">
+                    <button onclick="reviews()">Gerar avaliações</button>
+                    <button onclick="limparA()">Limpar avaliações</button>
+                </div>
+            </div>
+        </div>
+        <div class="campo" id="div_reviews">
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="main.js"></script>
